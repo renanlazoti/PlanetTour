@@ -1,0 +1,247 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/PlanetTour/front/public/img/imagemDeFundo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    /* background: linear-gradient(to bottom, #0b6c99 50%, #d8d7d7);  */
+}
+
+.ceu {
+    width: 100%;
+    height: 100%;
+    background-color: #87CEEB;
+    position: relative;
+    overflow: hidden;
+}
+
+.nuvem {
+    width: 200px;
+    height: 100px;
+    background-color: #fff; 
+    border-radius: 150px 150px 150px 150px / 120px 120px 100px 100px;
+    position: absolute;
+}
+.logo-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 650px;
+    height: auto;
+    border-radius: 98px;
+}
+
+.caixaTexto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.aviao {
+    animation: voar 7s linear infinite alternate;
+}
+
+@keyframes voar {
+    0% {
+        transform: translateY(0) rotateZ(0);
+    }
+    50% {
+        transform: translatey(-40px) rotateZ(0);
+    }
+    100% {
+        transform: translateY(0) rotateZ(0);
+    }
+}
+
+img {
+    height: 30px;
+    width: 57px;
+    margin-left: -55px;
+    /* margin-top: 0px; */
+}
+
+.campo-pergunta {
+    flex: 1;
+    height: 40px;
+    width: 820px;
+    font-size: 17px;
+    text-align: start;
+    color: rgb(97, 97, 97);
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+
+.botao-avancar img {
+    width: 5%;
+    height: auto;
+    display: block; 
+    margin: 5px;
+}
+
+
+@keyframes moverNuvem2 {
+    /* 0% {
+        left: 110%; Começar fora da tela à direita */
+    /* } */
+    100% {
+        left: -200px; /* Terminar fora da tela à esquerda */
+    }
+}
+
+@keyframes moverNuvem3 {
+    0% {
+        left: -200px; /* Começar fora da tela à esquerda */
+    }
+    100% {
+        left: 100%; /* Terminar fora da tela à direita */
+    }
+}
+
+@keyframes moverNuvem4 {
+    100% {
+        left: -300px; /* Começar fora da tela à direita */
+    }
+    /* 0% { 
+        left: -200px; Terminar fora da tela à esquerda
+    } */
+}
+
+@keyframes moverNuvem5 {
+    /* 0% {
+        left: -200px; Começar fora da tela à esquerda */
+    /* } */
+    100% {
+        left: 100%; /* Terminar fora da tela à direita */
+    }
+}
+
+@keyframes moverNuvem6 {
+    0% {
+        left: -110%; /* Começar fora da tela à direita */
+    }
+    100% {
+        left: 1400px; /* Terminar fora da tela à esquerda */
+    }
+}
+
+@keyframes moverNuvem7 {
+    /* 0% {
+        left: -200px; Começar fora da tela à esquerda */
+    /* } */
+    100% {
+        left: 100%; /* Terminar fora da tela à direita */
+    }
+}
+
+@keyframes moverNuvem8 {
+    /* 0% {
+        left: 110%; Começar fora da tela à direita */
+    /* } */
+    100% {
+        left: -200px; /* Terminar fora da tela à esquerda */
+    }
+}
+
+@keyframes moverNuvem9 {
+    100% {
+        left: 200%; /* Início na posição inicial */
+    }
+    15% {
+        left: -100%;
+    }
+    /* 50% {
+        left: 100%;
+    } */
+}
+
+.nuvem::before,
+.nuvem::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;  
+}
+
+.nuvem::before {
+    width: 120px;
+    height: 80px;
+    border-radius: 100px 100px 100px 100px / 80px 80px 60px 60px;
+    top: -20px;
+    left: 60px;
+}
+
+.nuvem::after {
+    width: 140px;
+    height: 90px;
+    border-radius: 100px 100px 100px 100px / 70px 70px 50px 50px;
+    top: 10px;
+    left: 30px;
+}
+
+.nuvem:nth-child(1) {
+    top: 20%;
+    left: 70%;
+    animation: moverNuvem2 80s linear infinite;
+}
+
+.nuvem:nth-child(2) {
+    top: 40%;
+    left: 15%;
+    animation: moverNuvem2 48s linear infinite;
+
+}
+
+.nuvem:nth-child(3) {
+    top: 80%;
+    left: 10%;
+    animation: moverNuvem2 70s linear infinite;
+}
+.nuvem:nth-child(4) {
+    top: 65%;
+    left: 87%;
+    animation: moverNuvem2 80s linear infinite;
+}
+
+.nuvem:nth-child(5) {
+    top: 60%;
+    left: 45%;
+    animation: moverNuvem2 48s linear infinite;
+}
+
+.nuvem:nth-child(6) {
+    top: 10%;
+    left: 10%;
+    animation: moverNuvem2 70s linear infinite;
+}
+
+.nuvem:nth-child(7) {
+    top: 89%;
+    left: 50%;
+    animation: moverNuvem2 80s linear infinite;
+}
+
+.nuvem:nth-child(8) {
+    top: 5%;
+    left: 43%;
+    animation: moverNuvem2 48s linear infinite;
+}
+
+.nuvem:nth-child(9) {
+    top: 4%;
+    left: 0%;
+    animation: moverNuvem2 70s linear infinite;
+}
+
